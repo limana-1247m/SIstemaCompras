@@ -1,0 +1,69 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: rgb(248, 239, 218);
+}
+
+h1, h2{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.product{
+    background-color: bisque;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    width: 150px;
+}
+
+button{
+    background-color: rgb(236, 163, 67);
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 6px;
+
+}
+
+button:hover{
+    background-color: #d17f03;
+}
+
+ button.remove{
+    background-color: rgb(167, 28, 132);
+   
+ }
+
+ button.remove:hover{
+    background-color: rgb(97, 9, 75);
+   
+ }
+
+#cart{
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #d17f03;
+    border-radius: 8px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-size: large;
+}
+
+h3.tot{
+    color: #e4931a;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+span.total{
+    color: rgb(7, 6, 5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

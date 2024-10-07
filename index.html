@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Curly and Care</title>
+</head>
+<body>
+    <h1>Curly and Care</h1>
+    <!--Lista de produtos-->
+    <div class="product-list">
+
+        <div class="product">
+            <h2>Produto 01</h2>
+            <p>R$ 45,00</p>
+            <button onclick="addToCart('Produto 1', 45)">Adicionar ao Carrinho</button>
+           <button onclick="removeFromCart('Produto 1', 45)">Remover do Carrinho</button>
+              </div>
+
+        <div class="product">
+            <h2>Produto 02</h2>
+            <p>R$ 55,00</p>
+            <button onclick="addToCart('Produto 2', 55)">Adicionar ao Carrinho</button>
+            <button onclick="removeFromCart('Produto 2', 55)">Remover do Carrinho</button>
+        </div>
+
+        <div class="product">
+            <h2>Produto 03</h2>
+            <p>R$ 120,00</p>
+            <button onclick="addToCart('Produto 3', 120)">Adicionar ao Carrinho</button>
+            <button  onclick="removeFromCart('Produto 3', 120)">Remover do Carrinho</button>
+        </div>
+
+        <div class="product">
+            <h2>Produto 04</h2>
+            <p>R$ 25,00</p>
+            <button onclick="addToCart('Produto 4', 25)">Adicionar ao Carrinho</button>
+            <button  onclick="removeFromCart('Produto 4', 25)">Remover do Carrinho</button>
+        </div>
+    </div>
+
+    <!--Carrinho-->
+    <h2>Seu Carrinho</h2>
+    <div id="cart">
+        <p>Seu carrinho está vazio</p>
+    </div>
+
+    <!--Total-->
+    <button class ="tot" onclick="">Total:</button> <span class="total">R$ 0,00</span></h3>
+    <script src="script.js"></script>
+</body>
+</html>
