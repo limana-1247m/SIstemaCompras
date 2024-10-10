@@ -4,39 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Curly and Care</title>
+    <title>BioFarma</title>
 </head>
 <body>
-    <h1>Curly and Care</h1>
-    <!--Lista de produtos-->
+     
+    <!--Navbar-->
+
+    <nav class="navbar">
+        <div class="container">
+               <img class="logo" src="imagens/logofarmacia.png" alt="logofarmacia"> 
+            </div>
+           <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+      </div>
+    </nav>
+    
+<!--Lista de produtos-->
     <div class="product-list">
 
         <div class="product">
-            <h2>Produto 01</h2>
-            <p>R$ 45,00</p>
-            <button onclick="addToCart('Produto 1', 45)">Adicionar ao Carrinho</button>
-           <button onclick="removeFromCart('Produto 1', 45)">Remover do Carrinho</button>
-              </div>
-
-        <div class="product">
-            <h2>Produto 02</h2>
-            <p>R$ 55,00</p>
-            <button onclick="addToCart('Produto 2', 55)">Adicionar ao Carrinho</button>
-            <button onclick="removeFromCart('Produto 2', 55)">Remover do Carrinho</button>
+            <h2 class="produto">Paracetamol 750mg<br> 20 comprimidos</h2>
+            <img src="imagens/paracetamol (2).png" alt="paracetamol 750mg, 20 comprimidos">
+            <p>R$ 19,90</p>
+            <button class="add" onclick="addToCart('Paracetamol 750mg', 19.90)">Adicionar ao Carrinho</button> <!--Mudança simples de colocar os numeros de '1' para '01'-->
+            <button class="remove" onclick="removeFromCart('Paracetamol 750mg', 19.90)">Remover do Carrinho</button>
         </div>
 
         <div class="product">
-            <h2>Produto 03</h2>
-            <p>R$ 120,00</p>
-            <button onclick="addToCart('Produto 3', 120)">Adicionar ao Carrinho</button>
-            <button  onclick="removeFromCart('Produto 3', 120)">Remover do Carrinho</button>
-        </div>
-
-        <div class="product">
-            <h2>Produto 04</h2>
+            <h2 class="produto">Buscopan Composto</h2>
+            <img class="imgb" src="imagens/buscopan-composto.png" alt="buscopan composto">
             <p>R$ 25,00</p>
-            <button onclick="addToCart('Produto 4', 25)">Adicionar ao Carrinho</button>
-            <button  onclick="removeFromCart('Produto 4', 25)">Remover do Carrinho</button>
+            <button class="add" onclick="addToCart('Buscopan Composto', 25.00)">Adicionar ao Carrinho</button>
+            <button class="remove" onclick="removeFromCart('Buscopan Composto', 25.00)">Remover do Carrinho</button>
+        </div>
+
+        <div class="product">
+            <h2 class="produto">Enterogermina</h2>
+            <img src="imagens/enterogermina-png.png" alt="enterogermina">
+            <p>R$ 69,90</p>
+            <button class="add" onclick="addToCart('Enterogermina', 69,90)">Adicionar ao Carrinho</button>
+            <button class="remove" onclick="removeFromCart('Enterogermina', 69,90)">Remover do Carrinho</button>
+        </div>
+
+        <div class="product">
+            <h2 class="produto">Cimegripe</h2>
+            <img src="imagens/cimegripe.png" alt="cimegripe">
+            <p>R$ 12,00</p>
+            <button class="add" onclick="addToCart('Cimegripe', 12.00)">Adicionar ao Carrinho</button>
+            <button class="remove" onclick="removeFromCart('Cimegripe', 12.00)">Remover do Carrinho</button>
         </div>
     </div>
 
@@ -47,7 +67,8 @@
     </div>
 
     <!--Total-->
-    <button class ="tot" onclick="">Total:</button> <span class="total">R$ 0,00</span></h3>
+    <span>Total:</span> <span class="price">R$ 0,00</span>
+
     <script src="script.js"></script>
 </body>
 </html>
