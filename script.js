@@ -39,4 +39,3 @@ function updateCart() {
     // Atualiza o total
     totalElement.innerText = `R$ ${total.toFixed(2)}`;
 }
-
