@@ -9,13 +9,12 @@
 <body>
      
     <!--Navbar-->
-
     <nav class="navbar">
         <div class="container">
                <img class="logo" src="imagens/logofarmacia.png" alt="logofarmacia"> 
             </div>
            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home">Home</a></li> 
                 <li><a href="#produtos">Produtos</a></li>
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#sobre">Sobre Nós</a></li>
@@ -23,8 +22,9 @@
             </ul>
       </div>
     </nav>
-    
+ 
 <!--Lista de produtos-->
+<section class="produtos" id="productos">
     <div class="product-list">
 
         <div class="product">
@@ -47,8 +47,8 @@
             <h2 class="produto">Enterogermina</h2>
             <img src="imagens/enterogermina-png.png" alt="enterogermina">
             <p>R$ 69,90</p>
-            <button class="add" onclick="addToCart('Enterogermina', 69,90)">Adicionar ao Carrinho</button>
-            <button class="remove" onclick="removeFromCart('Enterogermina', 69,90)">Remover do Carrinho</button>
+            <button class="add" onclick="addToCart('Enterogermina', 69.90)">Adicionar ao Carrinho</button>
+            <button class="remove" onclick="removeFromCart('Enterogermina', 69.90)">Remover do Carrinho</button>
         </div>
 
         <div class="product">
@@ -59,7 +59,7 @@
             <button class="remove" onclick="removeFromCart('Cimegripe', 12.00)">Remover do Carrinho</button>
         </div>
     </div>
-
+</section>
     <!--Carrinho-->
     <h2>Seu Carrinho</h2>
     <div id="cart">
